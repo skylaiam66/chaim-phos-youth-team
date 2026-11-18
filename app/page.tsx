@@ -123,11 +123,11 @@ export default function Home() {
         <div className="home-hero-copy">
           <span className="home-kicker">A COMMUNITY. A PURPOSE. A FUTURE.</span>
 <h1>
-  <span className="text-black">E</span>nkindle.<br />
-  <span className="text-yellow-400">E</span>xpand.{" "}
-  <span className="text-red-500">E</span>ternalise.
+  <span className="slogan-black">E</span>nkindle.<br />
+  <span className="slogan-yellow">E</span>xpand.{" "}
+  <span className="slogan-red">E</span>ternalise.
 </h1>
-          <p>
+      <p>
             CHAIM PHOS Youth Team brings young people together through friendship,
             leadership, shared experiences and community engagement. We create
             room for people to connect, discover their potential and take part in
