@@ -1,1 +1,31 @@
-{"name":"CHAIM PHOS Youth Team","short_name":"CHAIM PHOS","description":"Enkindle.Expand.Eternalize","start_url":"/","display":"standalone","background_color":"#080b09","theme_color":"#00A651","icons":[{"src":"/icons/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"/icons/icon-512.png","sizes":"512x512","type":"image/png"},{"src":"/icons/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]}
+{
+  "name": "CHAIM PHOS Youth Team",
+  "short_name": "CHAIM PHOS",
+  "id": "/",
+  "description": "Enkindle. Expand. Eternalise. A community bringing young people together through friendship, leadership, development and community service.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080b09",
+  "theme_color": "#00A651",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
