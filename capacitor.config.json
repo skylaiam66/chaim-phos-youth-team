@@ -1,0 +1,9 @@
+{
+  "appId": "com.chaimphos.youthteam",
+  "appName": "CHAIM PHOS Youth Team",
+  "webDir": "android-placeholder",
+  "server": {
+    "url": "https://chaim-phos-youth-team.vercel.app",
+    "cleartext": false
+  }
+}

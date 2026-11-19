@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CHAIM PHOS Youth Team</string>
+    <string name="title_activity_main">CHAIM PHOS Youth Team</string>
+    <string name="package_name">com.chaimphos.youthteam</string>
+    <string name="custom_url_scheme">com.chaimphos.youthteam</string>
+</resources>
