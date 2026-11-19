@@ -17,6 +17,7 @@ import {
 } from '@/lib/media';
 
 import { supabase } from '@/lib/supabase';
+import ImpactStats from '@/components/ImpactStats';
 
 import VerifiedBadge from '@/components/VerifiedBadge';
 
@@ -731,6 +732,7 @@ export default function Community() {
       <h1 className="section-title">
         Community
       </h1>
+      <ImpactStats compact />
 
 
       {/* STORIES */}

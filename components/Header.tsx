@@ -51,7 +51,7 @@ export default function Header() {
     ['Library', '/library'],
     ['Contributions', '/contributions'],
     ['Bookings', '/bookings'],
-    ['Me', '/me'],
+    ['My Account', '/me'],
     ...(user?.role === 'Director' && director ? [['Director Panel', '/director']] : []),
   ];
 
@@ -69,12 +69,13 @@ export default function Header() {
       <span title={online ? 'Online' : 'Offline'} className={'dot ' + (online ? 'online' : 'offline')} />
       <div className="profile-mini">
         <img className="avatar" src={user?.photoData || '/assets/logo/logo.png'} alt="Profile" />
-        <span className="name">{user?.fullName || 'Guest'} {user?.paid && <VerifiedBadge />}
+        <span className="name">
+          <span className="user-name-text">{user?.fullName || 'Guest'}</span>
+          {user?.paid && <VerifiedBadge />}
           {user?.membershipType === 'Member' && <i className="badge-dot" style={{ background: '#168cff' }} />}
           {user?.membershipType === 'Official' && <i className="badge-dot" style={{ background: '#e32636' }} />}
         </span>
       </div>
-      <Link className="header-login" href={user ? '/me' : '/login'}>{user ? 'My account' : 'Member login'}</Link>
     </header>
     {director && user?.role === 'Director' && <div className="director-strip">DIRECTOR MODE</div>}
     {menu && <>

@@ -62,7 +62,7 @@ export default function Footer() {
           <div><strong>CHAIM PHOS YOUTH TEAM</strong><span>Enkindle. Expand. Eternalise.</span></div>
         </div>
         <p>
-          A youth community built around friendship, shared experiences,
+          A youth club built around friendship, shared experiences,
           participation and positive contribution. We grow by encouraging
           one another and making room for everyone to play a part.
         </p>
@@ -71,6 +71,7 @@ export default function Footer() {
           <Link href="/events">Events</Link><Link href="/projects">Projects</Link>
           <Link href="/library">Library</Link><Link href="/login">Join / Login</Link>
         </div>
+        <div className="footer-contact"><a href="mailto:director.chaimphos@gmail.com">director.chaimphos@gmail.com</a><a href="mailto:chaimphos.youth2023team@gmail.com">chaimphos.youth2023team@gmail.com</a></div>
         <small>© {new Date().getFullYear()} CHAIM PHOS Youth Team. Together, we move forward.</small>
       </div>
     </footer>

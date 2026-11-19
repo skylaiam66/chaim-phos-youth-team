@@ -1757,7 +1757,7 @@ export default function Director() {
       {tab === 'Settings' && (
         <section className="card">
 
-          <h2>Organisation settings</h2>
+          <h2>Club settings</h2>
 
           <label>
             WhatsApp number

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getAll, putRaw } from '@/lib/db';
 import { initialOfficials } from '@/lib/officials';
+import ImpactStats from '@/components/ImpactStats';
 
 type Item = {
   id: string;
@@ -121,26 +122,18 @@ export default function Home() {
     <div className="main home-wallpaper chaim-home">
       <section className="home-hero">
         <div className="home-hero-copy">
-          <span className="home-kicker">A COMMUNITY. A PURPOSE. A FUTURE.</span>
+          <span className="home-kicker">Do you know how to?</span>
 <h1>
   <span className="slogan-black">E</span>nkindle.<br />
   <span className="slogan-yellow">E</span>xpand.{" "}
   <span className="slogan-red">E</span>ternalise.
 </h1>
       <p>
-            CHAIM PHOS Youth Team brings young people together through friendship,
-            leadership, shared experiences and community engagement. We create
-            room for people to connect, discover their potential and take part in
-            positive action.
+            CHAIM PHOS Youth Team is a youth club bringing young people together through friendship, leadership, shared experiences and community service. We create room for every member to connect, discover their potential and take part in positive change.
           </p>
           <div className="home-hero-actions">
             <Link className="btn" href="/login">Join CHAIM PHOS</Link>
             <a className="btn secondary" href="#about">Discover our purpose</a>
-          </div>
-          <div className="home-hero-slogan">
-            <b className="slogan-black">E</b>nkindle.
-            <b className="slogan-yellow">E</b>xpand.
-            <b className="slogan-red">E</b>ternalise.
           </div>
         </div>
 
@@ -191,13 +184,11 @@ export default function Home() {
           <h2>A place to belong, participate and grow.</h2>
         </div>
         <p>
-          We are a youth team built around the belief that people achieve more
-          when they encourage one another. Our community brings members together
-          to build friendships, exchange ideas, celebrate milestones, support
-          one another through difficult moments and participate in activities
-          that make life richer.
+          CHAIM PHOS is an inclusive youth club established on 3 December 2023 in Kambuga Town Council. We bring young people together to build friendships, develop leadership, celebrate achievements, support one another through difficult moments and serve our communities—regardless of religion, tribe, background or social status.
         </p>
       </section>
+
+      <ImpactStats />
 
       <section className="home-section" id="purpose">
         <div className="home-section-heading">
@@ -216,22 +207,25 @@ export default function Home() {
       <section className="home-vision-grid">
         <article className="vision-card">
           <span className="eyebrow">OUR VISION</span>
-          <h2>A connected generation creating positive change.</h2>
+          <h2>Building a community of empowered youth driving positive change.</h2>
           <p>
-            We aspire to nurture a community where young people feel included,
-            equipped and inspired to use their abilities for their own growth
-            and the good of others.
+            We envision a connected community of empowered young people who use their abilities, talents and leadership to create positive change.
           </p>
         </article>
         <article className="vision-card mission-card">
           <span className="eyebrow">OUR MISSION</span>
-          <h2>Inspire. Empower. Unite.</h2>
+          <h2>To inspire, empower and unite youth.</h2>
           <p>
-            We bring young people together through shared experiences,
-            participation, learning, mutual support and community-minded
-            activities that encourage personal development and collective progress.
+            We inspire, empower and unite youth through community service, workshops and impactful projects, enhancing lives and creating positive change.
           </p>
         </article>
+      </section>
+
+      <section className="hesuper-section">
+        <span className="eyebrow">OUR CLUB PHILOSOPHY</span><h2>HESUPER — the principles that guide us</h2>
+        <div className="hesuper-grid">
+          {[["H","Humanity","Love, care and support for others."],["E","Equality","Fair and equal treatment for everyone."],["S","Service","Volunteering and helping to lift others up."],["U","Unity","Standing together in success and hardship."],["P","Peace & Cooperation","Promoting harmony among members and communities."],["E","Empowerment","Encouraging youth growth and self-development."],["R","Responsibility","Practising accountability and discipline."]].map(([letter,title,desc]) => <article className="hesuper-card" key={letter+title}><b>{letter}</b><div><h3>{title}</h3><p>{desc}</p></div></article>)}
+        </div>
       </section>
 
       <section className="home-section">
