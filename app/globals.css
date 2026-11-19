@@ -278,7 +278,7 @@ label { display: block; margin: 8px 0; color: #243c30; font-weight: 600; }
   .brand small { font-size: 8px; }
   .flag { width: 25px; height: 18px; }
   .clock { display: none; }
-  .profile-mini .name { max-width: 70px; font-size: 10px; }
+  .profile-mini .name { max-width: none; width: auto; min-width: 0; overflow: visible; white-space: nowrap; font-size: 10px; flex-shrink: 1; }
   .avatar { width: 30px; height: 30px; }
   .header-login { padding: 8px; font-size: 9px; }
   .main { padding: 15px 12px; }
@@ -326,3 +326,4 @@ label { display: block; margin: 8px 0; color: #243c30; font-weight: 600; }
 .hesuper-card p{margin:0;color:#53645d;font-size:13px;line-height:1.55}
 .footer-contact{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0}.footer-contact a{color:inherit;font-size:12px;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:640px){.impact-stats{grid-template-columns:1fr;gap:10px}.impact-stat{padding:17px}.hesuper-grid{grid-template-columns:1fr}.hesuper-section{margin-top:28px;padding:22px 17px}.hesuper-card{padding:14px}.impact-stats-compact{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-stats-compact .impact-stat{gap:9px;padding:12px}.impact-stats-compact .impact-stat-icon{display:none}.impact-stats-compact .impact-stat strong{font-size:23px}.impact-stats-compact .impact-stat small{font-size:10px}}
+
